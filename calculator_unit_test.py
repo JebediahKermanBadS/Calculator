@@ -57,7 +57,7 @@ class CalculatorTestCase(unittest.TestCase):
         """
         self.assertEqual(self.evaluate("e"), math.e)
 
-    def test_allOperators(self):
+    def test_all_operators(self):
         """A Method
         """
         self.assertEqual(self.evaluate("1294 % 9 + 12 - 30 * 9 / 10 + 0.5 ^ 2 * 44"),
@@ -74,7 +74,7 @@ class CalculatorTestCase(unittest.TestCase):
         """
         self.assertEqual(self.evaluate("fac ( 5 )"), 120)
 
-    def test_facultyNegative(self):
+    def test_faculty_negative(self):
         """A Method
         """
         self.assertRaises(Exception, self.evaluate, "fac ( -1 )")
